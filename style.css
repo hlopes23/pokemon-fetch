@@ -1,0 +1,225 @@
+body{
+    display: flex;
+    margin-top:40px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(131, 173, 109));
+    height: 90vh;
+    flex-flow: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pokemon-logo{
+    min-width: 40%;
+    max-width: 40%;
+    height: auto;
+}
+
+.info-box{
+    margin: 0;
+    display: flex;
+    width: 100%;
+    flex-flow: column wrap;
+}
+
+.pokemon-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-tittle{
+    text-transform: lowercase;
+    font-family: sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+
+#dropdown{
+    margin: 0;
+    display: flex;
+    flex-flow: column;
+    margin-bottom: 20px;
+    width: fit-content;
+    align-self: center;
+}
+
+
+.dropdown{
+    position: relative;
+    width: 100px;
+    height: 40px;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: lowercase;
+    background-color: #80b081;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown:hover{
+    background-color: #45a049;
+}
+
+
+.dropdown-list{
+    position: relative;
+}
+
+.dropdown-list-items{
+    display: none;
+    position: absolute;
+    font-family: sans-serif;
+    width: 100px;
+    font-size: 14px;
+    text-align: center;
+    color: white;
+    background-color: #c7ebcafb;
+    box-shadow: 5px -5px 50px 25px rgba(0,0,0,0.2);
+    z-index: 1;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .dropdown-list ul li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown-list ul li:hover {
+    background-color: #a3c19a;
+    cursor: pointer;
+  }
+
+  #dropdown:hover .dropdown-list-items {
+    display: block;
+  }
+
+  #dropdown:hover .dropdown .dropdown-list-items {
+    background-color: #3e8e41;
+  }
+  
+
+.card{
+    font-family: sans-serif;
+    display: none;
+    flex-flow: column;
+    height: 700px;
+    width: 400px;
+    padding: 5%;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px rgb(88, 86, 86, 0.5);
+}
+
+.image-wrapper{
+    display: flex;
+    height:45%;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.card .text-wrapper{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    padding-top: 15px;
+    height: calc(100% - 370px);
+    border-radius: 8px;
+    background-color: rgb(256,256,256, 0.3);
+}
+
+.card .text-wrapper .pokemon-type{
+    margin: 0px;
+    position: absolute;
+    padding: 0px 10px;
+    background-color: black;
+    top: -18px;
+    right: 20px;
+    text-transform: uppercase;
+    color: white;
+    font-size: 14px;
+    border-radius: 6px;
+    height: 36px;
+    align-content: center;
+}
+
+.card .text-wrapper .pokemon-name{
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.card .text-wrapper .pokemon-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 25px;
+}
+
+.card .text-wrapper .pokemon-column{
+    padding: 0;
+    padding-right: 5px;
+    text-transform: uppercase;
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-end;
+    align-items: center;
+    font-weight: 200;
+    font-size: 12px;
+}
+
+
+.card .text-wrapper .pokemon-value{
+    padding: 0;
+    padding-left: 5px;
+    text-transform: uppercase;
+    display: flex;
+    flex-basis: 50%;
+    justify-content: flex-start;
+    align-items: center;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.card .text-wrapper .pokemon-info .column{
+    margin: 0px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card .text-wrapper .pokemon-info .column .pokemon-column{
+margin: 0px;
+justify-content: center;
+width: 100%;
+align-content: center;
+padding: 0px;
+}
+
+
+.card .text-wrapper .pokemon-info .column .pokemon-value{
+    margin: 0px;
+    justify-content: center;
+    width: 100%;
+    padding: 0px;
+    padding-top: 5px;
+    text-transform: capitalize;
+    }
+

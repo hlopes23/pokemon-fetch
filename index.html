@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fetching Pokemons</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" async></script>
+  </head>
+  <body>
+    <main>
+      <section class="info-box">
+        <div class="dropdown-tittle">pokédex</div>
+        <section id="dropdown" class="pokemon-wrapper" data-object="dropdown">
+          <button class="dropdown" data-object="dropdownButton">
+            <article class="selected-pokemons"></article>
+          </button>
+          <div class="dropdown-list">
+            <ul class="dropdown-list-items">
+              <li>mewtwo</li>
+              <li>charizard</li>
+              <li>pikachu</li>
+              <li>pidgeot</li>
+              <li>gyarados</li>
+            </ul>
+          </div>
+        </section>
+        <section class="card" data-object="card">
+          <div class="image-wrapper">
+            <img src="" alt="" class="pokemon-image" id="pokemon-image" />
+          </div>
+          <div class="text-wrapper">
+            <div class="pokemon-type"></div>
+            <div class="pokemon-name"></div>
+            <div class="pokemon-info">
+              <div class="pokemon-column">hp:</div>
+              <div class="pokemon-value"></div>
+            </div>
+            <div class="pokemon-info">
+              <div class="pokemon-column">attack:</div>
+              <div class="pokemon-value"></div>
+            </div>
+            <div class="pokemon-info">
+              <div class="pokemon-column">defense:</div>
+              <div class="pokemon-value"></div>
+            </div>
+            <div class="pokemon-info">
+              <div class="pokemon-column">special attack:</div>
+              <div class="pokemon-value"></div>
+            </div>
+            <div class="pokemon-info">
+              <div class="pokemon-column">special defense:</div>
+              <div class="pokemon-value"></div>
+            </div>
+            <div class="pokemon-info">
+              <div class="pokemon-column">speed:</div>
+              <div class="pokemon-value"></div>
+            </div>
+            <div class="pokemon-info">
+              <div class="pokemon-column">height:</div>
+              <div class="pokemon-value"></div>
+            </div>
+            <div class="pokemon-info">
+              <div class="pokemon-column">weight:</div>
+              <div class="pokemon-value"></div>
+            </div>
+            <div class="pokemon-info">
+              <div class="column">
+                <div class="pokemon-column">ability:</div>
+                <div class="pokemon-value"></div>
+              </div>
+              <div class="column">
+                <div class="pokemon-column">hidden ability:</div>
+                <div class="pokemon-value"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </section>
+    </main>
+    <img class="pokemon-logo" src="pokemon-logo.png" alt="pokemon logo" />
+  </body>
+</html>
