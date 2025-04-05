@@ -76,7 +76,6 @@ document.querySelector('.dropdown-list-items').addEventListener('click', functio
 
     if (e.target.tagName.toLowerCase() === 'li') {
       pokemon = e.target.innerHTML; 
-      console.log('Escolheste o Pokémon:', pokemon);
       selected.innerHTML = pokemon;
     }
 
